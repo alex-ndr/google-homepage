@@ -1,0 +1,17 @@
+
+#main {
+    width: 40%;
+    margin: 0 auto;
+}
+
+#main img{
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+}
+
+#main form input {
+    width: 100%;
+}
+
+#main 
