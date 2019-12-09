@@ -1,17 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+}
 
+/* Navbar */
+
+
+/* Main content */
 #main {
-    width: 40%;
-    margin: 0 auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 #main img{
     display: block;
-    width: 250px;
+    width: 275px;
     margin: 0 auto;
+    margin-bottom: 25px;
 }
 
-#main form input {
+#main input {
     width: 100%;
+    margin-bottom: 25px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 2px solid rgb(238, 238, 238);
 }
 
-#main 
+#main button {
+    margin: 0 4px 30px 4px;
+    border: none;
+    background-color: rgb(240, 240, 240);
+    padding: 10px 20px;
+    font-size: 13px;
+    color: rgb(100, 100, 100)
+}
+
+#main p {
+    font-size: 12px;
+}
+
+
+/* Footer */
