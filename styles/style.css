@@ -3,9 +3,56 @@ body {
 }
 
 /* Navbar */
+#navbar {
+    margin-top: 30px;;
+    position: relative;
+}
 
+#navbar #a1 {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 210px;
+}
 
-/* Main content */
+#navbar #a2 {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 160px;
+}
+
+#navbar img{
+    width: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 120px;;
+}
+
+#navbar #login{
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 23px;
+    
+    font-size: 13px;
+    font-weight: bold;
+    background-color: rgb(22, 122, 253);
+    color: #fff;
+    padding: 6.5px 12px;
+    border: none;
+    border-radius: 2px;
+}
+
+/* Main area */
 #main {
     position: absolute;
     left: 50%;
@@ -27,29 +74,32 @@ body {
     box-sizing: border-box;
     width: 100%;
     height: 2.9em;
-    border: 1px solid rgb(211, 211, 211);
-    border-radius: 25px;
+    border: none;
     margin-bottom: 30px;
-    cursor: text;
-}
-
-
-#search-box:hover {
-    box-shadow: 0 0 5px 1px #dadada;
-}
-
-#search-box:active {
-
 }
 
 #main input {
     font-size: 15px;
     border: #ffffff;
     outline: none;
-    position: absolute;
+    position: relative;
+    width: 437px;
+    z-index: 1;
     top: 50%;
     transform: translate(0, -50%);
-    left: 44px;
+    padding-left: 44px;
+    height: 2.9em;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 25px;
+    cursor: text;
+}
+
+#main input:hover {
+    box-shadow: 0 0 5px 1px #dadada;
+}
+
+#main input:focus {
+    box-shadow: 0 0 5px 1px #dadada;
 }
 
 #img-1 {
@@ -58,6 +108,7 @@ body {
     top: 50%;
     transform: translate(0, -50%);
     left: 12px;
+    z-index: 2;
 }
 
 #img-2 {
@@ -66,6 +117,7 @@ body {
     top: 50%;
     transform: translate(0, -50%);
     right: 60px;
+    z-index: 2;
 }
 
 #img-3 {
@@ -74,15 +126,23 @@ body {
     top: 50%;
     transform: translate(0, -50%);
     right: 10px;
+    z-index: 2;
 }
 
 #main button {
-    margin: 0 4px 30px 4px;
-    border: none;
+    margin: 0 3px 30px 3px;
+    border: 0.5px solid #fff;
+    border-radius: 3px;
     background-color: rgb(240, 240, 240);
-    padding: 10px 20px;
-    font-size: 13px;
-    color: rgb(100, 100, 100)
+    padding: 9px 16px;
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+    cursor: pointer;
+}
+
+#main button:hover {
+    color: #000;
+    border: 0.5px solid #bbb;
 }
 
 #main p {
