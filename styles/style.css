@@ -3,12 +3,13 @@ body {
 }
 
 /* Navbar */
+
 #navbar {
     margin-top: 30px;;
     position: relative;
 }
 
-#navbar #a1 {
+#a1 {
     text-decoration: none;
     color: #000;
     font-size: 13px;
@@ -18,7 +19,7 @@ body {
     right: 210px;
 }
 
-#navbar #a2 {
+#a2 {
     text-decoration: none;
     color: #000;
     font-size: 13px;
@@ -29,27 +30,43 @@ body {
 }
 
 #navbar img{
-    width: 25px;
+    width: 24px;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
     right: 120px;;
+    opacity: 0.6;
 }
 
-#navbar #login{
+#login{
     text-decoration: none;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
     right: 23px;
-    
     font-size: 13px;
     font-weight: bold;
     background-color: rgb(22, 122, 253);
     color: #fff;
-    padding: 6.5px 12px;
+    padding: 8px 14px;
     border: none;
     border-radius: 2px;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+#a1:hover {
+    color: #6d6d6d;
+    text-decoration: underline;
+}
+
+#a2:hover {
+    color: #6d6d6d;
+    text-decoration: underline;
+}
+
+#navbar img:hover {
+    opacity: 1;
 }
 
 /* Main area */
@@ -151,3 +168,44 @@ body {
 
 
 /* Footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 15px;
+    padding: 13.5px 30px;
+    background-color: #f4f4f4;
+    border-top: 0.3px solid #dad9d9;
+    color: #777;
+}
+
+footer ul {
+    font-size: 13px;
+    padding: 13.5px 30px;
+    background-color: #f4f4f4;
+    border-top: 0.3px solid #dad9d9;
+}
+
+ul a {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #777;
+}
+
+li {
+    display: inline;
+    padding-right: 25px;
+}
+
+li:nth-child(5), li:nth-child(6), li:nth-child(7) {
+    float: right;
+}
+
+li:hover {
+    text-decoration: underline;
+}
