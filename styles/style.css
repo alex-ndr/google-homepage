@@ -12,29 +12,68 @@ body {
     top: 40%;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 475px;
+    width: 482px;
 }
 
-#main img{
+#main #google{
     display: block;
     width: 275px;
     margin: 0 auto;
     margin-bottom: 25px;
 }
 
-#main input {
+#search-box {
+    position: relative;
     box-sizing: border-box;
     width: 100%;
-    padding: 10px 40px;
-    margin-bottom: 25px;
-    font-size: 16px;
+    height: 2.9em;
+    border: 1px solid rgb(211, 211, 211);
     border-radius: 25px;
-    border: 2px solid rgb(238, 238, 238);
-    outline: none;
+    margin-bottom: 30px;
+    cursor: text;
 }
 
-#main input:hover, #main input:focus {
-    box-shadow: 0 0 5px 5px #f4f4f4;
+
+#search-box:hover {
+    box-shadow: 0 0 5px 1px #dadada;
+}
+
+#search-box:active {
+
+}
+
+#main input {
+    font-size: 15px;
+    border: #ffffff;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 44px;
+}
+
+#img-1 {
+    height: 1.25em;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 12px;
+}
+
+#img-2 {
+    height: ;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 60px;
+}
+
+#img-3 {
+    height: 1.25em;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 10px;
 }
 
 #main button {
